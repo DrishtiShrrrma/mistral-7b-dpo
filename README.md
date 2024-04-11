@@ -14,11 +14,14 @@
 | hinge     | 1400 | 0.649300      | 0.653185        | -4.023954      | -7.192891        | 0.788881             | 3.168936        | -386.763702    | -394.132172  | -2.456152       | -2.546264     | 4:01:02       |
 | hinge     | 2100 | 0.663000      | 0.590392        | -3.597967      | -6.356043        | 0.795422             | 2.758075        | -378.395294    | -389.872375  | -2.420573       | -2.499924     | 4:01:02       |
 
- 
- 
- References: 
- https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac
 
+ #### Observations
 
-https://colab.research.google.com/drive/15iFBr1xWgztXvhrj5I9fBv20c7CFOPBE?usp=sharing
+ 1. The kto pair loss type shows the lowest training and validation losses consistently across all steps. This suggests it's learning more effectively and generalizing better than the others.
+ 2. The kto pair loss type again stands out with generally positive rewards for chosen actions and improving accuracies and margins over steps, indicating a balance between exploration and exploitation and an increasing ability to differentiate between actions over time.
+ 3. The hinge loss type has the shortest training time, but its performance metrics do not match those of the kto pair loss type.
+ 
+ #### References
+ 1. https://towardsdatascience.com/fine-tune-a-mistral-7b-model-with-direct-preference-optimization-708042745aac
+ 2. https://colab.research.google.com/drive/15iFBr1xWgztXvhrj5I9fBv20c7CFOPBE?usp=sharing
  
