@@ -1,3 +1,4 @@
+#### Oservations
 
  | Loss Type | Step | Training Loss | Validation Loss | Rewards/chosen | Rewards/rejected | Rewards/accuracies | Rewards/margins | Logps/rejected | Logps/chosen | Logits/rejected | Logits/chosen | Training Time |
 |-----------|------|---------------|-----------------|----------------|------------------|---------------------|-----------------|----------------|--------------|-----------------|---------------|---------------|
@@ -15,7 +16,7 @@
 | hinge     | 2100 | 0.663000      | 0.590392        | -3.597967      | -6.356043        | 0.795422             | 2.758075        | -378.395294    | -389.872375  | -2.420573       | -2.499924     | 4:01:02       |
 
 
- #### Observations
+ #### Conclusion
 
  1. The kto pair loss type shows the lowest training and validation losses consistently across all steps. This suggests it's learning more effectively and generalizing better than the others.
  2. The kto pair loss type again stands out with generally positive rewards for chosen actions and improving accuracies and margins over steps, indicating a balance between exploration and exploitation and an increasing ability to differentiate between actions over time.
